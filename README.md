@@ -1,104 +1,74 @@
-# Todolist app
+# ToDo-List React App
 
-This is the basic project for displaying all the todo list item fetched from jsonplaceholder. 
+A ToDoList react app !
 
+## Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-## API Reference
+In the project directory, you can run:
 
-#### Get all Todo List
+### `npm start`
 
-```https
-  GET jsonplaceholder.typicode.com/todos
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-#### Add new Todo Task
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```https
-  POST jsonplaceholder.typicode.com/todos
-```
+### `npm test`
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `title`      | `string` | **Required**.  Title to add in the list. |
-| `Description`      | `string` | **Required**. Description to add in the list. |
-| `userId`      | `number` | **Required**. Id of item to add |
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-#### Update Todo Task
-```https
-  PUT jsonplaceholder.typicode.com/todos/${ID}
-```
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `title`      | `string` | **Required**.  Title to update in the list. |
-| `id`      | `string` | **Required**. id to update in the list. |
-| `userId`      | `number` | **Required**. Id of item to update |
+### `npm run build`
 
-#### Delete Todo Task
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```https
-  DELETE jsonplaceholder.typicode.com/todos/${id}
-```
-#### add(num1, num2)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Takes two numbers and returns the sum.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-## Screenshots
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-#### Todo List Screen Shot
-![App Screenshot](https://snipboard.io/EeWR8J.jpg)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-#### Adding New Todo Task
-![App Screenshot](https://snipboard.io/t1yDn0.jpg)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-#### Update and Delete Todo Task
-![App Screenshot](https://snipboard.io/a0YdFP.jpg)
-## Tech Stack
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-**Client:** React, Redux, TailwindCSS
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Run Locally
+### Code Splitting
 
-Clone the project
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-```bash
-  git clone https://github.com/niteenkum/todo-list
-```
+### Analyzing the Bundle Size
 
-Go to the project directory
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-```bash
-  cd todo-list
-```
+### Making a Progressive Web App
 
-Install dependencies
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```bash
-  Yarn
-```
+### Advanced Configuration
 
-Start the server
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-```bash
-  yarn start
-```
+### Deployment
 
-# Folder Structure
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-#### Component
-Contain all the components used in Project.
+### `npm run build` fails to minify
 
-#### Pages
-Contain All the pages used in project like Todo List which is homepage,
-todo update page, add new todo page.
-
-#### Hooks
-
-Contain useApiCall.ts Hook to call all the requests.
-
-#### utils
-Contain constant.ts file which contain baseurl 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
